@@ -11,3 +11,8 @@ sudo ./update-dm-hosts
 With the name of each docker machine a host is created with the machine name as SLD and *.dm* as TLD.
 Default docker machine host:
 > http://default.dm
+
+### References
+- https://gist.github.com/nddrylliog/1368532
+- https://docs.docker.com/machine/reference/ls/
+- http://cavaliercoder.com/blog/update-etc-hosts-for-docker-machine.html
