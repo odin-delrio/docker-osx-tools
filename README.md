@@ -10,4 +10,4 @@ sudo ./update-dm-hosts
 ## Generated host names
 With the name of each docker machine a host is created with the machine name as SLD and *.dm* as TLD.
 Default docker machine host:
-> http://docker.dm
+> http://default.dm
