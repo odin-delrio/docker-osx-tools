@@ -21,7 +21,7 @@ function addHostEntry() {
     sudo /bin/bash -c "echo \"${ip}	${hostName}\" >> /etc/hosts"
 }
 
-function updateMachineIp() {
+function putMachineIp() {
     name=$1
     ip=$2
 
@@ -45,5 +45,5 @@ checkRequirements
 
 docker-machine ls --format="{{.Name}}" | while read -r machineName; do
     machineIp="$(docker-machine ip ${machineName} 2>/dev/null)"
-    updateMachineIp ${machineName} ${machineIp}
+    putMachineIp ${machineName} ${machineIp}
 done
